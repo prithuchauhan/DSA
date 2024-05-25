@@ -10,6 +10,10 @@
 using namespace std;
 using lli = long long;
 
+// could have been done in a more sophisticated code but i am in no mood to write a better code now.
+
+// QUESTION LINK : https://leetcode.com/problems/rearrange-array-elements-by-sign/submissions/1267510332/
+
 vector<int> rearrangeArray(vector<int>& nums)
     {
         int plus = 0;
