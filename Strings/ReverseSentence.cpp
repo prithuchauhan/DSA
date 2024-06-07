@@ -12,7 +12,7 @@ using lli = long long;
 
 // Question Link : https://leetcode.com/problems/reverse-words-in-a-string/description/
 
-// string reverseWords(string s) 
+// string reverseWords(string s)     // this works too the below one is tad bit faster tho cause it doesnt involve making substrings again and again no major differences
 //     {
 //         vector<string> words;
 
