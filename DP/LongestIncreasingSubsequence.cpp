@@ -3,6 +3,8 @@
 
 // without dp best solution 
 
+// with dp u can sort nums in another vector and then apply LCS 
+
 
 class Solution {
 public:
