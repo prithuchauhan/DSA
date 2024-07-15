@@ -1,0 +1,44 @@
+// QUESTION LINK : https://leetcode.com/problems/longest-palindromic-substring/description/
+
+class Solution {
+public:
+    bool palindrome(string s) {
+        int i = 0;
+        int j = s.size() - 1;
+
+        while (i <= j) {
+            if (s[i] != s[j]) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+
+        return true;
+    }
+
+    string recursion(string s) {
+
+        if (s.size() == 1) {
+            return s;
+        }
+
+        if (palindrome(s)) {
+            return s;
+        }
+
+        string left = recursion(s.substr(0,s.size()-1));
+        string right = recursion(s.substr(1,s.size()-1));
+
+        if (left.size() > right.size()){
+            return left;
+        }
+        else{
+            return right;
+        }
+    }
+    string longestPalindrome(string s) {
+
+        return recursion(s);
+    }
+};
