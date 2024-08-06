@@ -24,7 +24,7 @@ public:
 
         cnt[s[0]-'A']++;
 
-        int len = 1e4;
+        int len = INT_MAX;
         string ans = "";
 
         while(j<s.size()){
